@@ -1,0 +1,46 @@
+# from https://github.com/github/gitignore/blob/master/Java.gitignore
+
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+!lib/*
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# netbeans specific ignore rules
+build.xml
+build/
+dist/
+nbproject/
+#nbproject/*
+#!nbproject/build-impl.xml
+#!nbproject/jfx-impl.xml
+#!nbproject/project.properties
+#!nbproject/project.xml
+
+#nbproject/*
+#nbproject/private/
+#!nbproject/project.properties
+#!nbproject/project.xml
+#/nbproject/private/
+
+.nb-gradle/
+.nb-gradle-properties
+
+# IntelliJ
+.idea/
+out/
+private/
+
+# Gradle
+.gradle/
+
+gradle.properties

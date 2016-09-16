@@ -1,0 +1,29 @@
+apply plugin: 'java'
+
+sourceCompatibility = '1.8'
+version = '0.1'
+group = ''
+def mainClass = 'Sample'
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+jar.doFirst{
+    manifest {
+        attributes("Manifest-Version" : "1.0",
+            "Main-Class" : mainClass
+        )
+    }
+    jar.manifest.writeTo(sourceSets.main.output.resourcesDir.getAbsolutePath() + "/META-INF/MANIFEST.MF")
+}
+
+repositories {
+   
+    mavenCentral()
+    // You may define additional repositories, or even remove "mavenCentral()".
+    // Read more about repositories here:
+    //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:repositories
+}
+
+dependencies {
+   
+}
